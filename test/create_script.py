@@ -16,3 +16,4 @@ data = data.replace("'","''")
 query = "execute script database_migration.GENERATE_SCRIPT('" + data + "')"
 R = C.odbc.execute(query)
 C.odbc.execute("commit;")
+end
